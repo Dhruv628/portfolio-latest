@@ -1,8 +1,9 @@
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaFile, FaLocationArrow } from "react-icons/fa6";
 
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -60,13 +61,22 @@ const Hero = () => {
             Hi! I&apos;m Dhruv, a Full-stack developer based in India.
           </p>
 
-          <a href="#about">
-            <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <div className="flex gap-6 items-center justify-center">
+            <Link href="#about">
+              <MagicButton
+                title="Show my work"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </Link>
+            <Link
+              href="https://drive.google.com/file/d/1R9yikCC0qVo5t4LmfNu_VQ1O7oEEkGf6/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MagicButton title="Resume" icon={<FaFile />} position="right" />
+            </Link>
+          </div>
         </div>
       </div>
     </div>
