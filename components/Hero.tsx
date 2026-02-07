@@ -70,7 +70,7 @@ const Hero = () => {
               />
             </Link>
             <Link
-              href="https://drive.google.com/file/d/1xIHHaVUMNtm77fcJWo7-5VAElAYj8nIc/view?usp=sharing"
+              href="https://drive.google.com/file/d/1FSuHrkkGZlzFD1LBYZFmm76mZEnED9_8/view"
               target="_blank"
               rel="noopener noreferrer"
             >
